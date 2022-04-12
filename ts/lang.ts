@@ -8,25 +8,25 @@ export class Lang {
   }
 
   //Get Phrase for the given key and language
-  public static get(key: string, lang: string): string {
+  public get(key: string, lang: string): string {
     //Check if key exists
-    if (this.json[key] == undefined) {
+    if (Lang.json[key] == undefined) {
       //Return null
       return null;
     } else {
       //Check if language exists
-      if (this.json[key][lang] == undefined) {
+      if (Lang.json[key][lang] == undefined) {
         //Check if default language exists
-        if (this.json[key][this.json["default"]] == undefined) {
+        if (Lang.json[key][Lang.json["default"]] == undefined) {
           //Return null
           return null;
         } else {
           //Return default language
-          return this.json[key][this.json["default"]];
+          return Lang.json[key][Lang.json["default"]];
         }
       } else {
         //Return language
-        return this.json[key][lang];
+        return Lang.json[key][lang];
       }
     }
   }
