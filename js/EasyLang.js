@@ -1,5 +1,5 @@
-import json from '../lang.json' assert {type: 'json'};
-export class Lang {
+import json from '../EasyLang.json' assert {type: 'json'};
+export class EasyLang {
 
     //Constructor
     constructor() {

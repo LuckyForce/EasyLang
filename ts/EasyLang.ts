@@ -1,6 +1,6 @@
-import json from '../lang.json' assert {type: 'json'};
+import json from '../EasyLang.json' assert {type: 'json'};
 
-export class Lang {
+export class EasyLang {
   private static json: object;
 
   public static init(lang: string) {
@@ -10,23 +10,23 @@ export class Lang {
   //Get Phrase for the given key and language
   public get(key: string, lang?: string): string {
     //Check if key exists
-    if (Lang.json[key] == undefined) {
+    if (EasyLang.json[key] == undefined) {
       //Return null
       return null;
     } else {
       //Check if language exists
-      if (Lang.json[key][lang] == undefined) {
+      if (EasyLang.json[key][lang] == undefined) {
         //Check if default language exists
-        if (Lang.json[key][Lang.json["default"]] == undefined) {
+        if (EasyLang.json[key][EasyLang.json["default"]] == undefined) {
           //Return null
           return null;
         } else {
           //Return default language
-          return Lang.json[key][Lang.json["default"]];
+          return EasyLang.json[key][EasyLang.json["default"]];
         }
       } else {
         //Return language
-        return Lang.json[key][lang];
+        return EasyLang.json[key][lang];
       }
     }
   }

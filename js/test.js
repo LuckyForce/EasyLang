@@ -1,8 +1,8 @@
 //import module Lang
-import { Lang } from './lang.js';
+import { EasyLang } from './EasyLang.js';
 
 //Create Instance of Lang
-const lang = new Lang();
+const lang = new EasyLang();
 
 //Print all test templates. HelloWorld, Welcome and Goodbye
 console.log("English");
