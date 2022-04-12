@@ -1,0 +1,17 @@
+{
+    "HelloWorld": {
+        "en": "Hello World",
+        "de": "Hallo Welt",
+        "es": "Hola Mundo"
+    },
+    "Welcome": {
+        "en": "Welcome",
+        "de": "Willkommen",
+        "es": "Bienvenido"
+    },
+    "Goodbye": {
+        "en": "Goodbye",
+        "de": "Auf Wiedersehen",
+        "es": "Adiós"
+    }
+}
