@@ -1,4 +1,4 @@
-import json from '../EasyLang.json' assert {type: 'json'};
+import json from 'PATH_NAME' assert {type: 'json'};
 export class EasyLang {
 
     //Constructor
