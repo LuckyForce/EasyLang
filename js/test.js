@@ -25,3 +25,9 @@ console.log("French");
 console.log(lang.get('HelloWorld', 'fr'));
 console.log(lang.get('Welcome', 'fr'));
 console.log(lang.get('Goodbye', 'fr'));
+console.log("");
+//This should return the default language because no language is specified.
+console.log("No Language");
+console.log(lang.get('HelloWorld'));
+console.log(lang.get('Welcome'));
+console.log(lang.get('Goodbye'));
