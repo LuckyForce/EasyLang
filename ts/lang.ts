@@ -8,7 +8,7 @@ export class Lang {
   }
 
   //Get Phrase for the given key and language
-  public get(key: string, lang: string): string {
+  public get(key: string, lang?: string): string {
     //Check if key exists
     if (Lang.json[key] == undefined) {
       //Return null
