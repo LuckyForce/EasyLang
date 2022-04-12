@@ -1,4 +1,4 @@
-class Lang {
+export class Lang {
     static JSON_PATH = 'lang.json';
 
     //Constructor
@@ -31,6 +31,3 @@ class Lang {
         }
     }
 }
-
-//Export
-export class Lang {}
