@@ -1,4 +1,5 @@
 {
+    "default": "en",
     "HelloWorld": {
         "en": "Hello World",
         "de": "Hallo Welt",
