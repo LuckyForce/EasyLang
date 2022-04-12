@@ -8,26 +8,26 @@ export class Lang {
         console.log(this.json);
     }
 
-    //Get Phrase for the given language
-    getPhrase(phrase, lang) {
-        //Check if phrase exists
-        if (this.json[phrase] == undefined) {
+    //Get Phrase for the given key and language
+    get(key, lang) {
+        //Check if key exists
+        if (this.json[key] == undefined) {
             //Return null
             return null;
         } else {
             //Check if language exists
-            if (this.json[phrase][lang] == undefined) {
+            if (this.json[key][lang] == undefined) {
                 //Check if default language exists
-                if (this.json[phrase][this.json['default']] == undefined) {
+                if (this.json[key][this.json['default']] == undefined) {
                     //Return null
                     return null;
                 } else {
                     //Return default language
-                    return this.json[phrase][this.json['default']];
+                    return this.json[key][this.json['default']];
                 }
             } else {
                 //Return language
-                return this.json[phrase][lang];
+                return this.json[key][lang];
             }
         }
     }
