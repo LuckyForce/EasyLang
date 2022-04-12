@@ -1,10 +1,10 @@
-class lang {
+class Lang {
     static JSON_PATH = 'lang.json';
 
     //Constructor
     constructor() {
         //Load json file
-        this.json = require(lang.JSON_PATH);
+        this.json = require(Lang.JSON_PATH);
     }
 
     //Get Phrase for the given language
@@ -32,3 +32,5 @@ class lang {
     }
 }
 
+//Export
+export class Lang {}
