@@ -1,10 +1,11 @@
+import json from './lang.json' assert {type: 'json'};
 export class Lang {
-    static JSON_PATH = 'lang.json';
 
     //Constructor
     constructor() {
         //Load json file
-        this.json = require(Lang.JSON_PATH);
+        this.json = json;
+        console.log(this.json);
     }
 
     //Get Phrase for the given language
