@@ -1,4 +1,4 @@
-import json from "../lang.json";
+import json from '../lang.json' assert {type: 'json'};
 
 export class Lang {
   private static json: object;
