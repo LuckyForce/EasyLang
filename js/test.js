@@ -6,16 +6,22 @@ const lang = new Lang();
 
 //Print all test templates. HelloWorld, Welcome and Goodbye
 console.log("English");
-console.log(lang.getPhrase('HelloWorld', 'en'));
-console.log(lang.getPhrase('Welcome', 'en'));
-console.log(lang.getPhrase('Goodbye', 'en'));
+console.log(lang.get('HelloWorld', 'en'));
+console.log(lang.get('Welcome', 'en'));
+console.log(lang.get('Goodbye', 'en'));
 console.log("");
 console.log("German");
-console.log(lang.getPhrase('HelloWorld', 'de'));
-console.log(lang.getPhrase('Welcome', 'de'));
-console.log(lang.getPhrase('Goodbye', 'de'));
+console.log(lang.get('HelloWorld', 'de'));
+console.log(lang.get('Welcome', 'de'));
+console.log(lang.get('Goodbye', 'de'));
 console.log("");
 console.log("Spanish");
-console.log(lang.getPhrase('HelloWorld', 'es'));
-console.log(lang.getPhrase('Welcome', 'es'));
-console.log(lang.getPhrase('Goodbye', 'es'));
+console.log(lang.get('HelloWorld', 'es'));
+console.log(lang.get('Welcome', 'es'));
+console.log(lang.get('Goodbye', 'es'));
+console.log("");
+//This should return the default language because French is not supported.
+console.log("French");
+console.log(lang.get('HelloWorld', 'fr'));
+console.log(lang.get('Welcome', 'fr'));
+console.log(lang.get('Goodbye', 'fr'));
